@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <title>Bootstrap</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Навігація</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Дім</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Посилання</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Привіт!
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Дія</a></li>
+                                <li><a class="dropdown-item" href="#">Інша дія</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Щось ще</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Вимкнути</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Пошук</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-4 col-lg-3">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/1.jpg" class="d-block w-100" alt="Cats">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/2.jpg" class="d-block w-100" alt="Cats">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/3.jpg" class="d-block w-100" alt="Cats">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/4.jpg" class="d-block w-100" alt="Cats">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Британська короткошерста кішка
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Найбільша з короткошерстих кішок славиться густим збитим хутром, яке створює враження
+                                округлості ліній британця. Її історія тісно пов'язана з римськими завоюваннями. Після
+                                переможних походів Юлія Цезаря на території сучасної Британії оселилося чимало римлян,
+                                які привозили із собою не лише домашнє начиння та господарські предмети, а й своїх
+                                тварин. Саме їхні кішки, спарувавшись із місцевими лісовими котами, стали фундаторами
+                                цієї породи.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Американський, курильський бобтейл
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Цих симпатяг відрізняє одна особливість – максимально укорочений хвіст у них від природи
+                                (ніяким котам хвости не купірують, тільки якщо для цього є медичні показання: травми,
+                                новоутворення і т. д. Це дуже складна операція і вона проводиться лише в умовах
+                                стаціонару!)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Норвезька лісова кішка
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Аборигенна скандинавська кішка. Її предком вважають ангорську кішку, яка потрапила в
+                                Північну Європу в XVI столітті, і під впливом холодного клімату обросла більш щільним
+                                хутром з підшерстком. Адаптувалися і кінцівки: стали подібними до лап рисі, що наділило
+                                її особливістю спускатися з дерев головою вниз. Це дуже рідкий для котячих навик, тож
+                                власники норвежців можуть пишатися унікальністю своїх вихованців.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="row">
+                        <h1>
+                            Ці форми точно щось роблять
+                        </h1>
+                        <fieldset class="border rounded p-3">
+                            <legend>Крадіжка персональних данних</legend>
+                            <div class="col">
+                                <label for="validationCustom01" class="form-label">Ім'я</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Ваше ім'я" required>
+                            </div>
+                            <div class="col">
+                                <label for="validationCustom01" class="form-label">Фамілія</label>
+                                <input type="text" class="form-control" id="validationCustom02"
+                                    placeholder="Ваша фамілія" required>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="border rounded p-3 mt-3">
+                            <legend>Оберіть щось</legend>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Щось</option>
+                                <option value="1">Будь що</option>
+                                <option value="2">Не те саме</option>
+                                <option value="3">Щось неймовірне</option>
+                                <option value="4">Тут могло щось бути</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset class="border rounded p-3 mt-3">
+                            <legend>Обери когось</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Мене</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Або мене</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"
+                                    disabled>
+                                <label class="form-check-label" for="inlineCheckbox3">Ніколи не обирай мене</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="border rounded p-3 mt-3">
+                            <legend>Ну як воно?</legend>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea2"></textarea>
+                                <label for="floatingTextarea2">Напишить тут</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="border rounded p-3 mt-3 mb-3">
+                            <legend>Номер вашої карти</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                <label class="form-check-label" for="radioDefault1">
+                                    Тут потрібно додати всю вашу банківську інформацію
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
+                                    checked>
+                                <label class="form-check-label" for="radioDefault2">
+                                    Ще сюди
+                                </label>
+                            </div>
+                        </fieldset>
+                        <button type="button" class="btn btn-secondary">Уно реверс</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>       
+    </section>
+
+    <footer class="text-center border-top pb-4 pt-3 mt-3">
+        <div>&copy; Ви в небезпеці!</div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
